@@ -45,7 +45,7 @@ def get_openstack_server_id():
 
 def get_sinfo_path():
     # TODO(johngarbutt): get this from environment or config file?
-    sinfo_alt_path = "/usr/local/software/slurm/current/bin/sinfo"
+    sinfo_alt_path = "/net/slurm/slurm/bin/sinfo"
     if path.exists(sinfo_alt_path):
         return sinfo_alt_path
     return "sinfo"
